@@ -2,6 +2,8 @@
 ## 💡 AudioTrigger是什么？
 一个基于 **Windows 审计事件**与**任务计划**的游戏音频自动切换工具。
 
+<img width="1704" height="1160" alt="PixPin_2026-07-30_14-17-04" src="https://github.com/user-attachments/assets/ce934561-b542-4734-bbaf-6e1027eebc84" />
+
 ### ✨ 特点
 - **零后台，零占用**，配置完即可关闭，功能完全由原生系统 + `SoundVolumeView` 实现
 - **切换默认音频设备**
@@ -54,6 +56,9 @@ python AudioTrigger.pyw
 # 🎧 AudioTrigger
 ## 💡 What is AudioTrigger?
 An automatic game audio switching tool based on **Windows Audit Events** and **Task Scheduler**.
+
+<img width="1704" height="1160" alt="PixPin_2026-07-30_14-17-04" src="https://github.com/user-attachments/assets/ce934561-b542-4734-bbaf-6e1027eebc84" />
+
 ### ✨ Features
 - **Zero background process, zero footprint**. Once configured, it can be closed. The functionality is completely handled by the native system + `SoundVolumeView`.
 - **Switches the default audio device.**
