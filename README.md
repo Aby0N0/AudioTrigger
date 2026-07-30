@@ -1,5 +1,4 @@
 # 🎧 AudioTrigger
-
 ## 💡 AudioTrigger是什么？
 一个基于 **Windows 审计事件**与**任务计划**的游戏音频自动切换工具。
 
