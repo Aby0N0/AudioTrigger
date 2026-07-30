@@ -1,0 +1,15 @@
+```text
+# 忽略配置文件
+AudioTrigger_config.json
+
+# 忽略临时 XML 文件
+temp_*.xml
+
+# 忽略 Python 缓存和 PyInstaller 打包产物
+__pycache__/
+build/
+dist/
+*.spec
+
+# 忽略 SoundVolumeView
+SoundVolumeView.exe
