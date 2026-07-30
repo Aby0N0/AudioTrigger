@@ -11,15 +11,15 @@
 为了解决这个问题，我验证过两条可行路径：
 - **系统自带的“应用音量和设备首选项”**。对于自动切换音源来说，它没有任何问题。然而，如果你需要使用英伟达录制或者重放功能，由于英伟达**只录制默认音频设备**，这会导致游戏声音录不进去。
 - **SoundSwitch软件**。它可以提供一键切换默认音频设备的功能，比起手动点击切换方便了不少。它的不足有两点，一是**依然要手动操作**，二是会**占用后台**。
----
+
 ## ⚙️ AudioTrigger做了什么？
 **前端设定任务内容** ➡️ **任务计划程序写入两条关于某游戏（程序）开启/关闭的计划** ➡️ **监控到游戏（程序）启动/关闭，触发任务** ➡️ **向SoundVolumeView下发切换默认音频设备的命令**
----
+
 ## 🛠️ 使用准备
 - **操作系统**：Windows 10 / 11（需要**管理员权限**）
 - **核心科技**：本项目基于 NirSoft 的经典命令行小工具 `SoundVolumeView` 实现默认设备切换。
 - **关于SoundVolumeView**：出于开源版权规范，仓库源码中不直接附带该 `.exe`。请在 [SoundVolumeView 官网](https://www.nirsoft.net/utils/sound_volume_view.html) 下载64位版本，并将其与 `AudioTrigger.pyw` 放在同一个文件夹下。对于普通用户，我已经在 **Releases** 版本中集成了 `SoundVolumeView.exe`，直接下载使用即可。
----
+
 ## 📖 使用说明
 ### 普通用户（直接下载解压即用）
 1. 去本仓库右侧的 **Releases** 页面，下载最新的 `AudioTrigger` 解压包。
@@ -40,7 +40,7 @@ python AudioTrigger.pyw
 # 别忘了自备SoundVolumeView
 # （[https://www.nirsoft.net/utils/sound_volume_view.html](https://www.nirsoft.net/utils/sound_volume_view.html)）
 ```
----
+
 ## 📜 声明与致谢
 - **开源协议**：本项目基于 **MIT License** 免费开源。
 - **外部依赖**：特别感谢 **Nir Sofer** 开发的 `SoundVolumeView` 提供可靠的命令行音频切换支持。
@@ -57,21 +57,21 @@ An automatic game audio switching tool based on **Windows Audit Events** and **T
 - **Zero background process, zero footprint**. Once configured, it can be closed. The functionality is completely handled by the native system + `SoundVolumeView`.
 - **Switches the default audio device.**
 - **Precise device identification** via GUID.
----
+
 ## ❓ Why use AudioTrigger?
 For users who normally use speakers but need headphones for specific games, manually switching audio devices every time can get annoying. It's time for some **automation**.
 To solve this problem, I tested two alternative methods:
 - **Windows built-in "App volume and device preferences"**. This works fine for automatically switching audio sources. However, if you use NVIDIA's recording or Instant Replay features, since NVIDIA **only records the default audio device**, your game audio won't be captured.
 - **SoundSwitch software**. It provides a convenient hotkey to switch the default audio device, which is better than clicking through menus. But it has two drawbacks: first, it **still requires manual operation**, and second, it **occupies background resources**.
----
+
 ## ⚙️ How does AudioTrigger work?
 **Set task details in the frontend** ➡️ **Write two tasks into the Windows Task Scheduler regarding the launch/close of a specific game (program)** ➡️ **Monitor the game's startup/shutdown to trigger the tasks** ➡️ **Send a command to SoundVolumeView to switch the default audio device**
----
+
 ## 🛠️ Prerequisites
 - **OS**: Windows 10 / 11 (**Administrator privileges required**)
 - **Core Technology**: This project is built on NirSoft's classic command-line utility, `SoundVolumeView`, to execute the default device switch.
 - **About SoundVolumeView**: Due to open-source copyright guidelines, this repository does not include the `.exe` directly. Please download the 64-bit version from the [SoundVolumeView Official Website](https://www.nirsoft.net/utils/sound_volume_view.html) and place it in the same folder as `AudioTrigger.pyw`. For regular users, I have already integrated `SoundVolumeView.exe` in the **Releases** version—just download and use it directly.
----
+
 ## 📖 Usage Instructions
 ### Regular Users (Download, extract, and use)
 1. Go to the **Releases** page on the right side of this repository and download the latest `AudioTrigger` zip file.
@@ -92,7 +92,7 @@ python AudioTrigger.pyw
 # Don't forget to prepare SoundVolumeView yourself
 # ([https://www.nirsoft.net/utils/sound_volume_view.html](https://www.nirsoft.net/utils/sound_volume_view.html))
 ```
----
+
 ## 📜 Disclaimer & Acknowledgements
 - **Open Source License**: This project is free and open-source under the **MIT License**.
 - **External Dependencies**: Special thanks to **Nir Sofer** for developing `SoundVolumeView`, which provides reliable command-line audio switching support.
